@@ -1,9 +1,15 @@
+'use client'
+
+
+import { Intro } from "@/components/Intro";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center h-screen">
-      <h2>HeyLow</h2>
+    <main className="mb-10">
+      <div>
+        <Intro/>
+      </div>
     </main>
   );
 }
