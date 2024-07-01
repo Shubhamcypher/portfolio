@@ -2,6 +2,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { LampContainer } from "./ui/lamp";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+
+
+
+  const words = [
+    {
+      text: "Computer Science",
+      className: "text-red-500 dark:text-white-500 text-7xl",
+    },
+    {
+      text: "Graduate.",
+      className: "text-blue-500 dark:text-green-500",
+    },
+  ];
+
 
 export function Intro() {
   return (
@@ -15,9 +30,10 @@ export function Intro() {
                 duration: 0.8,
                 ease: "easeInOut",
                 }}
-                className="mt-8 md:mt-16 lg:mt-28 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+                className="mt-2 md:mt-16 lg:mt-2 bg-gradient-to-br from-slate-300 to-yellow-600 py-4 bg-clip-text text-center text-4xl font-bold tracking-tight text-transparent md:text-7xl"
             >
                 Hi! <br /> I am Shubham
+                <TypewriterEffectSmooth words={words}/>
             </motion.h1>
         </LampContainer>
     </div>
