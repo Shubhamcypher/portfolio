@@ -22,9 +22,8 @@ const words = [
 
 const Background = () => {
   return (
-    <Link href='/education'>
-        <Meteors number={30}/>
         <div className="flex flex-col items-center justify-center h-screen">
+            <Meteors number={30}/>
             <TypewriterEffectSmooth words={words} />
             <div className="flex justify-center items-center px-4">
                 <div className="lg:text-5xl mx-auto text-neutral-600 dark:text-neutral-400 font-semibold">
@@ -33,7 +32,7 @@ const Background = () => {
                 </div>
             </div>
         </div>
-    </Link>
+
   )
 }
 
