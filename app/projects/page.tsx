@@ -14,14 +14,14 @@ function page() {
       <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-yellow-300">
         Projects ({ProjecData.projects.length})
       </h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 ">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 ">
         {ProjecData.projects.map((project) => (
           <CardContainer key={project.id} className="inter-var">
             <Link href={project.url} target="_blank">
               <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-full rounded-xl p-6 border">
                 <CardItem
                   translateZ="50"
-                  className="text-xl font-bold text-neutral-600 dark:text-red-600  lg:text-4xl md:text-3xl "
+                  className="text-xl font-bold text-neutral-600 dark:text-red-600"
                 >
                   {project.title}
                 </CardItem>
@@ -35,10 +35,10 @@ function page() {
                 <CardItem translateZ="100" className="w-full mt-4">
                   <Image
                     src={project.image}
-                    height="1000"
-                    width="1000"
+                    height={1000}
+                    width={1000}
                     className="h-30 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                    alt="thumbnail"
+                    alt={project.title}
                   />
                 </CardItem>
                 <div className="flex justify-between items-center mt-20 rounded-[6px]">
@@ -65,10 +65,11 @@ function page() {
                         className="bg-white dark:bg-black text-black dark:text-green-500 border-neutral-200 dark:border-slate-800 flex gap-1 z-100"
                         onClick={(e) => e.stopPropagation()}
                       >
-                        <img
+                        <Image
                           src="https://icones.pro/wp-content/uploads/2021/06/icone-github-verte.png"
-                          alt="github"
-                          className="h-5 w-5"
+                          height={20}
+                          width={20}
+                          alt="GitHub icon"
                         />
                         Github
                       </Button>
