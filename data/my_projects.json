@@ -5,7 +5,7 @@
           "title": "WeTube",
           "description": "A full-stack stack video streaming web application using MERN stack with authentication using JWT tokens.",
           "url": "",
-          "github":"",
+          "github":"https://github.com/Shubhamcypher/WeTube",
           "isHosted": false,
           "image": "/images/option.png"
         },
@@ -23,7 +23,7 @@
           "title": "Y Tunes",
           "description": "A music school website to define key values and key features. Empowering the ability to align with music with number of students ",
           "url": "https://master--ytunes77.netlify.app/",
-          "github":"",
+          "github":"https://github.com/Shubhamcypher/tunes",
           "isHosted": true,
           "image": "/images/ytunes.png"
         },
@@ -32,7 +32,7 @@
           "title": "Potters Slider",
           "description": "Developed an engazing image slider carousel for Potterstech company",
           "url": "https://carousel-js-puce.vercel.app/",
-          "github":"",
+          "github":"https://github.com/Shubhamcypher/CarouselJS",
           "isHosted": true,
           "image": "/images/pottersCarousel.png"
         }
