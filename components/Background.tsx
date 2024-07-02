@@ -24,7 +24,7 @@ const words = [
 const Background = () => {
   return (
         <div className="flex flex-col items-center justify-center h-screen mt-4">
-            <Meteors number={30}/>
+            <Meteors number={30} className='w-[100vw]'/>
             <TypewriterEffectSmooth words={words} />
             <div className="flex justify-center items-center px-4">
                 <div className="lg:text-5xl mx-auto text-neutral-600 dark:text-neutral-400 font-semibold">

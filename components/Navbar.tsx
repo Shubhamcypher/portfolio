@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import ProjectData from '@/data/my_projects.json'
  
 
 function Navbar({ className }: { className?: string }) {
@@ -13,7 +14,7 @@ function Navbar({ className }: { className?: string }) {
     
   return (
     <div
-    className={cn("fixed top-0 inset-x-0 max-w-2xl mx-auto z-50", className)}
+    className={cn("fixed top-4 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
        <Menu setActive={setActive} >
         <Link href="/">
@@ -22,7 +23,7 @@ function Navbar({ className }: { className?: string }) {
         </Link>
         <Link href="/skills">
             <MenuItem active={active} setActive={setActive} item="Skills">
-                <div className="flex flex-col text-sm space-y-4">
+                <div className="flex flex-col text-sm space-y-4 ">
                         <div className="flex flex-shrink items-center justify-between">
                             <HoveredLink href="/projects">React</HoveredLink>
                             <img src="https://pluspng.com/img-png/react-logo-png-react-logo-png-transparent-amp-svg-vector-pluspng-2400x2400.png" className="rounded-full w-6 h-6 "/>
@@ -43,7 +44,7 @@ function Navbar({ className }: { className?: string }) {
                             <HoveredLink href="/projects">Next JS</HoveredLink>
                             <img src="https://w7.pngwing.com/pngs/87/586/png-transparent-next-js-hd-logo.png" className="rounded-full w-6 h-6"/>
                         </div>
-                        <div className="flex flex-shrink items-center justify-between">
+                        <div className="flex flex-shrink items-center justify-between gap-5">
                             <HoveredLink href="/projects">Virtual Box</HoveredLink>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png" className="rounded-full w-6 h-6"/>
                         </div>
@@ -51,15 +52,17 @@ function Navbar({ className }: { className?: string }) {
             </MenuItem>
         </Link>
         <Link href='/projects'>
-            <MenuItem active={active} setActive={setActive} item="Projects">
-                <div className="flex flex-col space-y-4 text-sm">
-                    <div className="flex flex-shrink items-center gap-2">
-                    <HoveredLink href="/projects">WeTube</HoveredLink>
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.9Izv-aszItToTtEqRMSE0QHaE6&pid=Api&P=0&h=180" className="rounded w-16 h-12"/>
-                    </div>
-                    <HoveredLink href="/projects">Tunes</HoveredLink>
-                    <HoveredLink href="/projects">NIDS</HoveredLink>   
+        <MenuItem active={active} setActive={setActive} item="Projects">
+            <div className="flex flex-col justify-center  ">
+            {ProjectData.projects.map((project)=>(
+                <div className="">
+                    <div className="flex flex-shrink justify-between mb-4 items-center gap-4">
+                    <HoveredLink href="/projects">{project.title}</HoveredLink>
+                    <img src={project.image} className="rounded w-16 h-12"/>
+                    </div>   
                 </div>
+            ))}
+            </div>
             </MenuItem>
         </Link>
         <Link href="/contact">

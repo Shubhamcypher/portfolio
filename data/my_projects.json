@@ -1,0 +1,41 @@
+{
+    "projects":[
+        {
+          "id": "1",
+          "title": "WeTube",
+          "description": "A full-stack stack video streaming web application using MERN stack with authentication using JWT tokens.",
+          "url": "",
+          "github":"",
+          "isHosted": false,
+          "image": "/images/option.png"
+        },
+        {
+          "id": "2",
+          "title": "NIDS",
+          "description": "Network Intrusion Detection System, which can detect potential harmful scripts and injections attack on your site.",
+          "url": "https://major-project-xi-two.vercel.app/",
+          "github":"",
+          "isHosted": true,
+          "image": "/images/nids.png"
+        },
+        {
+          "id": "3",
+          "title": "Y Tunes",
+          "description": "A music school website to define key values and key features. Empowering the ability to align with music with number of students ",
+          "url": "https://master--ytunes77.netlify.app/",
+          "github":"",
+          "isHosted": true,
+          "image": "/images/ytunes.png"
+        },
+        {
+          "id": "4",
+          "title": "Potters Slider",
+          "description": "Developed an engazing image slider carousel for Potterstech company",
+          "url": "https://carousel-js-puce.vercel.app/",
+          "github":"",
+          "isHosted": true,
+          "image": "/images/pottersCarousel.png"
+        }
+      ]
+      
+}
