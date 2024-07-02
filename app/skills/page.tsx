@@ -1,4 +1,5 @@
 import Background from '@/components/Background'
+import Technology from '@/components/Technology'
 import React from 'react'
 
 const page = () => {

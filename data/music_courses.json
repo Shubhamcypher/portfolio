@@ -1,0 +1,63 @@
+{
+    "courses":[
+        {
+          "id": "1",
+          "title": "WeTube",
+          "description": "A full-stack stack video streaming web application using MERN stack with authentication using JWT tokens.",
+          "slug": "wetube",
+          "isHosted": true,
+          "image": "/images/option.png"
+        },
+        {
+          "id": "2",
+          "title": "NIDS",
+          "description": "Network Intrusion Detection System, which can detect potential harmful scripts and injections attack on your site.",
+          "slug": "advanced-guitar",
+          "price": 150,
+          "instructor": "Jane Smith",
+          "isFeatured": true,
+          "image": "/images/nids.png"
+        },
+        {
+          "id": "3",
+          "title": "Y Tunes",
+          "description": "A music school website to define key values and key features. Empowering the ability to align with music with number of students ",
+          "slug": "Y Tunes",
+          "price": 120,
+          "instructor": "Emily Johnson",
+          "isFeatured": true,
+          "image": "/images/ytunes.png"
+        },
+        {
+          "id": "4",
+          "title": "Jazz Saxophone",
+          "description": "Delve into jazz saxophone, covering improvisation, scales, and famous jazz standards.",
+          "slug": "jazz-saxophone",
+          "price": 130,
+          "instructor": "Michael Brown",
+          "isFeatured": true,
+          "image": "https://oo-prod.s3.amazonaws.com/public/artworks/2021/05/06/928f9540aae1b291/artworkWebOptimize/banner.jpg"
+        },
+        {
+          "id": "5",
+          "title": "Drumming 101",
+          "description": "Learn to play the drums with lessons on rhythm, technique, and various drumming styles.",
+          "slug": "drumming-101",
+          "price": 110,
+          "instructor": "Chris Davis",
+          "isFeatured": true,
+          "image": "https://drummingreview.com/wp-content/uploads/2017/12/Best-Electronic-Drum-Set-1.jpg"
+        },
+        {
+          "id": "6",
+          "title": "Music Theory Basics",
+          "description": "Understand the fundamentals of music theory, including notation, harmony, and composition.",
+          "slug": "music-theory-basics",
+          "price": 90,
+          "instructor": "Sarah Wilson",
+          "isFeatured": true,
+          "image": "https://tsdca.org/app/uploads/jr3NP7i-1024x640.jpg"
+        }
+      ]
+      
+}
