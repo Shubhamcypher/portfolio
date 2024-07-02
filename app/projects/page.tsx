@@ -12,7 +12,7 @@ function page() {
   return (
     <div className="min-h-screen bg-black py-12 pt-36 ">
       <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-yellow-300">
-        Projects ({ProjecData.projects.length})
+        Projectsaaaa ({ProjecData.projects.length})
       </h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 ">
         {ProjecData.projects.map((project) => (
