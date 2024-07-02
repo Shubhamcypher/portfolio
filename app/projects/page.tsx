@@ -60,8 +60,10 @@ function page() {
                 </CardItem>  
                 <Button
                   borderRadius="1.75rem"
-                  className="bg-white dark:bg-black text-black dark:text-green-500 border-neutral-200 dark:border-slate-800"
-                  >Github</Button>
+                  className="bg-white dark:bg-black text-black dark:text-green-500 border-neutral-200 dark:border-slate-800 flex  gap-1"
+                  >
+                  <img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-verte.png" className="h-5 w-5" />
+                  Github</Button>
               </div>
             </CardBody>
           </CardContainer>
