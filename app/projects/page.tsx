@@ -63,7 +63,7 @@ function page() {
                       <Button
                         borderRadius="1.75rem"
                         className="bg-white dark:bg-black text-black dark:text-green-500 border-neutral-200 dark:border-slate-800 flex gap-1 z-100"
-                        onClick={(e) => e.stopPropagation()}
+                        onClick={(e: MouseEvent) => e.stopPropagation()}
                       >
                         <Image
                           src="https://icones.pro/wp-content/uploads/2021/06/icone-github-verte.png"
