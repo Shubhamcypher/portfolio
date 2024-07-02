@@ -26,27 +26,27 @@ function Navbar({ className }: { className?: string }) {
                 <div className="flex flex-col text-sm space-y-4 ">
                         <div className="flex flex-shrink items-center justify-between">
                             <HoveredLink href="/projects">React</HoveredLink>
-                            <img src="https://pluspng.com/img-png/react-logo-png-react-logo-png-transparent-amp-svg-vector-pluspng-2400x2400.png" className="rounded-full w-6 h-6 "/>
+                            <img src="https://pluspng.com/img-png/react-logo-png-react-logo-png-transparent-amp-svg-vector-pluspng-2400x2400.png" alt="react" className="rounded-full w-6 h-6 "/>
                         </div>
                         <div className="flex flex-shrink items-center justify-between">
                             <HoveredLink href="/projects">Node JS</HoveredLink>
-                            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" className="rounded-full w-6 h-6"/>
+                            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/454/nodejs-new-pantone-white-512.png" alt="node" className="rounded-full w-6 h-6"/>
                         </div>
                         <div className="flex flex-shrink items-center justify-between">
                             <HoveredLink href="/projects">Mongo DB</HoveredLink>
-                            <img src="https://i.pinimg.com/originals/90/3b/bb/903bbb31b5ae50326ae7d2eac38c9a33.jpg" className="rounded-full w-6 h-6"/>
+                            <img src="https://i.pinimg.com/originals/90/3b/bb/903bbb31b5ae50326ae7d2eac38c9a33.jpg" alt="mongodb"  className="rounded-full w-6 h-6"/>
                         </div>
                         <div className="flex flex-shrink items-center justify-between">
                             <HoveredLink href="/projects">MySQL</HoveredLink>
-                            <img src="https://p7.hiclipart.com/preview/572/182/378/mysql-relational-database-management-system-logo-microsoft-sql-server-mysql-logo.jpg" className="rounded-full w-6 h-6"/>
+                            <img src="https://p7.hiclipart.com/preview/572/182/378/mysql-relational-database-management-system-logo-microsoft-sql-server-mysql-logo.jpg" alt="mysql"  className="rounded-full w-6 h-6"/>
                         </div>
                         <div className="flex flex-shrink items-center justify-between">
                             <HoveredLink href="/projects">Next JS</HoveredLink>
-                            <img src="https://w7.pngwing.com/pngs/87/586/png-transparent-next-js-hd-logo.png" className="rounded-full w-6 h-6"/>
+                            <img src="https://w7.pngwing.com/pngs/87/586/png-transparent-next-js-hd-logo.png" alt="next"  className="rounded-full w-6 h-6"/>
                         </div>
                         <div className="flex flex-shrink items-center justify-between gap-5">
                             <HoveredLink href="/projects">Virtual Box</HoveredLink>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png" className="rounded-full w-6 h-6"/>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png" alt="virtual box"  className="rounded-full w-6 h-6"/>
                         </div>
                     </div>
             </MenuItem>
@@ -55,7 +55,7 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem active={active} setActive={setActive} item="Projects">
             <div className="flex flex-col justify-center  ">
             {ProjectData.projects.map((project)=>(
-                <div className="">
+                <div key={project.id}>
                     <div className="flex flex-shrink justify-between mb-4 items-center gap-4">
                     <HoveredLink href="/projects">{project.title}</HoveredLink>
                     <img src={project.image} className="rounded w-16 h-12"/>

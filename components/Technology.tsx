@@ -6,7 +6,6 @@ import { IconSquareRoundedX } from "@tabler/icons-react";
 const loadingStates = [
     {
       text: "ReactJS",
-      image:"https://pluspng.com/img-png/react-logo-png-react-logo-png-transparent-amp-svg-vector-pluspng-2400x2400.png"
     },
     {
       text: "ExpressJS",

@@ -67,6 +67,7 @@ function page() {
                       >
                         <img
                           src="https://icones.pro/wp-content/uploads/2021/06/icone-github-verte.png"
+                          alt="github"
                           className="h-5 w-5"
                         />
                         Github
