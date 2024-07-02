@@ -8,8 +8,7 @@ import Link from "next/link";
 
 
 import ProjecData from '@/data/my_projects.json'
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
-
+import { Button } from "@/components/ui/moving-border";
 
 
 
@@ -58,17 +57,11 @@ function page() {
                     Visit
                   </div>
                 </button>
-                <div className="flex justify-center text-center">
-                  <HoverBorderGradient
-                    containerClassName="rounded-full"
-                    as="button"
-                    className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-                  >
-                    
-                    <span>Aceternity UI</span>
-                  </HoverBorderGradient>
-                </div>
                 </CardItem>  
+                <Button
+                  borderRadius="1.75rem"
+                  className="bg-white dark:bg-black text-black dark:text-green-500 border-neutral-200 dark:border-slate-800"
+                  >Github</Button>
               </div>
             </CardBody>
           </CardContainer>
