@@ -12,7 +12,7 @@ function page() {
   return (
     <div className="min-h-screen bg-black py-12 pt-36 ">
       <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-yellow-300">
-        Projectsaaaa ({ProjecData.projects.length})
+        Projects ({ProjecData.projects.length})
       </h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 ">
         {ProjecData.projects.map((project) => (
@@ -21,7 +21,7 @@ function page() {
               <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-full rounded-xl p-6 border">
                 <CardItem
                   translateZ="50"
-                  className="text-xl font-bold text-neutral-600 dark:text-red-600"
+                  className="text-xl font-bold text-neutral-600 dark:text-red-600 md:text-2xl lg:text-3xl"
                 >
                   {project.title}
                 </CardItem>
