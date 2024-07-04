@@ -10,7 +10,8 @@
               "visible": true,
               "title": "Associate System Engineer",
               "location": "TCS, Delhi",
-              "description": "I have not joined yet. I am waiting for my joining letter"
+              "description": "I have not joined yet. I am waiting for my joining letter",
+              "background": "purple"
             },
             {
               "id":"2",
@@ -21,7 +22,8 @@
               "visible": true,
               "title": "Frontend Developer (Intern)",
               "location": "PottersTech, Online",
-              "description": "Designed a responsive Image slider using HTML, CSS, Javascipt."
+              "description": "Designed a responsive Image slider using HTML, CSS, Javascipt.",
+              "background": "purple"
             },
             {
               "id":"3",
@@ -32,7 +34,8 @@
               "visible": true,
               "title": "Social Intern",
               "location": "Hamari Pehachan",
-              "description": "Done a social campaign"
+              "description": "Done a social campaign",
+              "background": "purple"
             },
             {
               "id":"4",
@@ -43,18 +46,32 @@
               "visible": true,
               "title": "UX Lead",
               "location": "Austin, TX",
-              "description": "User Experience, Interaction Design, Prototyping, User Testing"
+              "description": "User Experience, Interaction Design, Prototyping, User Testing",
+              "background": "green"
             },
             {
               "id":"5",
               "className": "vertical-timeline-element--work",
               "date": "2020 - present",
-              "iconStyle": { "background": "#0aa", "color": "#fff" },
+              "iconStyle": { "background": "#0aa", "color": "#f0f" },
               "icon": "faEnvelope",
               "visible": true,
               "title": "Head of Design",
               "location": "Seattle, WA",
-              "description": "Design Leadership, Team Management, Strategic Planning, Innovation"
+              "description": "Design Leadership, Team Management, Strategic Planning, Innovation",
+              "background": "green"
+            },
+            {
+              "id":"6",
+              "className": "vertical-timeline-element--work",
+              "date": "Now - Future",
+              "iconStyle": { "background": "#0aa", "color": "#fff" },
+              "icon": "faEnvelope",
+              "visible": true,
+              "title": "Developer",
+              "location": "Your Organization",
+              "description": "Thank you for visiting my portfolio, I will be so happy to join your organization",
+              "background": "red"
             }
           ]
 }
