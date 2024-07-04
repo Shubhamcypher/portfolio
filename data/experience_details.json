@@ -1,0 +1,60 @@
+{
+    "experience":
+        [
+            {
+              "id":"1",
+              "className": "vertical-timeline-element--work",
+              "date": "May 2024 - present",
+              "iconStyle": { "background": "#000", "color": "#fff" },
+              "icon": "faEnvelope",
+              "visible": true,
+              "title": "Associate System Engineer",
+              "location": "TCS, Delhi",
+              "description": "I have not joined yet. I am waiting for my joining letter"
+            },
+            {
+              "id":"2",
+              "className": "vertical-timeline-element--work",
+              "date": "May 2023 - August 2023",
+              "iconStyle": { "background": "#0a0", "color": "#fff" },
+              "icon": "faEnvelope",
+              "visible": true,
+              "title": "Frontend Developer (Intern)",
+              "location": "PottersTech, Online",
+              "description": "Designed a responsive Image slider using HTML, CSS, Javascipt."
+            },
+            {
+              "id":"3",
+              "className": "vertical-timeline-element--work",
+              "date": "May 2020 - July 2020",
+              "iconStyle": { "background": "#00a", "color": "#fff" },
+              "icon": "faEnvelope",
+              "visible": true,
+              "title": "Social Intern",
+              "location": "Hamari Pehachan",
+              "description": "Done a social campaign"
+            },
+            {
+              "id":"4",
+              "className": "vertical-timeline-element--work",
+              "date": "2018 - 2020",
+              "iconStyle": { "background": "#a00", "color": "#fff" },
+              "icon": "faEnvelope",
+              "visible": true,
+              "title": "UX Lead",
+              "location": "Austin, TX",
+              "description": "User Experience, Interaction Design, Prototyping, User Testing"
+            },
+            {
+              "id":"5",
+              "className": "vertical-timeline-element--work",
+              "date": "2020 - present",
+              "iconStyle": { "background": "#0aa", "color": "#fff" },
+              "icon": "faEnvelope",
+              "visible": true,
+              "title": "Head of Design",
+              "location": "Seattle, WA",
+              "description": "Design Leadership, Team Management, Strategic Planning, Innovation"
+            }
+          ]
+}

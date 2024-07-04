@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const ContactMe = () => {
   return (
-    <div className="min-h-screen relative flex items-center justify-center bg-transparent z-50">
+    <div className="mt-8 relative flex items-center justify-center bg-transparent z-50">
       <div className="bg-gray-900 bg-opacity-20 p-8 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-2xl font-bold text-white mb-6 text-center">Contact Me</h2>
         <form className="space-y-6">

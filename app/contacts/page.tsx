@@ -400,8 +400,8 @@ const page = () => {
 
   return (
     <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
-    <Meteors number={50}/>
     <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4 ">
+    <Meteors number={20}/>
       <motion.div
         initial={{
           opacity: 0,
@@ -418,8 +418,8 @@ const page = () => {
       >
         <ContactMe/>
       </motion.div>
-      <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-      <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
+      <div className="absolute w-full bottom-20 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white -z-40" />
+      <div className="absolute w-full bottom-0 h-full md:h-full z-10">
         <World data={sampleArcs} globeConfig={globeConfig} />;
       </div>
     </div>

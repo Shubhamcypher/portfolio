@@ -65,6 +65,10 @@ function Navbar({ className }: { className?: string }) {
             </div>
             </MenuItem>
         </Link>
+        <Link href="/experiences">
+            <MenuItem active={null} setActive={setActive} item="Experiences">
+            </MenuItem>
+        </Link>
         <Link href="/contacts">
             <MenuItem active={active} setActive={setActive} item="Contact Me">
                 shubhamdevu023@gmail.com
