@@ -5,7 +5,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { useInView } from 'react-intersection-observer';
 import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
 
-const TimelineElement = ({ item }) => {
+const TimelineElement = ({ item }: { item: object }) => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
