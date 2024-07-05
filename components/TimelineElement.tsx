@@ -16,7 +16,7 @@ interface ExperienceItem {
   }
 
 const TimelineElement = ({ item }: { item: ExperienceItem }) => {
-  const { ref, inView } = useInView({ triggerOnce: true });
+  const { ref, inView } = useInView({ triggerOnce: false });
 
   return (
     <div ref={ref} className="vertical-timeline-element">

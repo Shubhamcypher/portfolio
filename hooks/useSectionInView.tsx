@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export const useSectionInView = (id:number) => {
+export const useSectionInView = (id:string) => {
   const ref = useRef(null);
   const [inView, setInView] = useState(false);
 
