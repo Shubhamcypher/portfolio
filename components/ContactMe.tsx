@@ -25,7 +25,7 @@ const ContactMe = () => {
     try {
       console.log("hey");
       
-      const response = await fetch('/api/contact.js', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
