@@ -11,6 +11,7 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    date:string;
   }[];
   className?: string;
 }) => {
@@ -19,7 +20,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-4",
         className
       )}
     >
@@ -51,6 +52,7 @@ export const HoverEffect = ({
           <Card>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
+            <CardDescription>{item.date}</CardDescription>
           </Card>
         </Link>
       ))}

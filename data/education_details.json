@@ -2,17 +2,20 @@
     "education":[
         {
             "title": "UPES, Dehradun",
-            "description":"2024",
+            "description":"B.Tech CSE(CyberSecurity and Forensics)",
+            "date":"2024",
             "link": "#"
         },
         {
             "title": "Sri Agrasen Public School",
-            "description":"2018",
+            "description":"12 CBSE Board",
+            "date":"2019",
             "link": "#"
         },
         {
             "title": "D.A.V. Public School",
-            "description":"2016",
+            "description":"10 CBSE Board",
+            "date":"2016",
             "link": "#"
         }
         
