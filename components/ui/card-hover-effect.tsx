@@ -73,7 +73,7 @@ export const Card = ({
         "rounded-2xl h-full w-full p-2 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
-    >
+    ><img src="https://wallpapercrafter.com/desktop/130358-anime-Lifeline-sky-school-dark-anime-girls-window.jpg" className="w-full h-44 rounded-xl m-1" />
       <div className="relative z-50">
         <div className="p-2">{children}</div>
       </div>
