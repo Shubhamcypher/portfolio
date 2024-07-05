@@ -1,7 +1,7 @@
 'use client'
 import nodemailer from 'nodemailer';
 
-export default async (req, res) => {
+export default async (req:any, res:any) => {
   if (req.method === 'POST') {
     console.log("I am here");
     
