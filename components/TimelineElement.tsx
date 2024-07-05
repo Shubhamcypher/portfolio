@@ -3,7 +3,7 @@ import React from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { useInView } from 'react-intersection-observer';
-import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 interface ExperienceItem {
     id: number;
@@ -33,7 +33,7 @@ const TimelineElement = ({ item }: { item: ExperienceItem }) => {
         }}
         visible={inView}
         date={item.date}
-        icon={<HandshakeOutlinedIcon />}
+        icon={<KeyboardDoubleArrowDownIcon />}
         iconStyle={{
           background: item.background,
         }}

@@ -7,10 +7,15 @@ import Link from "next/link";
 
 import ProjecData from "@/data/my_projects.json";
 import { Button } from "@/components/ui/moving-border";
+import { Spotlight } from "@/components/ui/Spotlight";
 
 function page() {
   return (
     <div className="min-h-screen bg-black py-12 pt-36 ">
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="blue"
+      />
       <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-yellow-300">
         Projects ({ProjecData.projects.length})
       </h1>
