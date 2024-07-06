@@ -6,7 +6,6 @@ import { SparklesCore } from "./ui/sparkles";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { Boxes } from "./ui/background-boxes";
 import { WavyBackground } from "./ui/wavy-background";
-import { GlowingStarsBackgroundCard } from "./ui/glowing-stars";
 import { Vortex } from "./ui/votex";
 
 const me = [
