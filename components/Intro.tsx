@@ -14,7 +14,7 @@ const me = [
     name: "Shubham Kumar",
     designation: "Software Engineer",
     image: "/images/me.png",
-  }
+  },
 ];
 
 export function Intro() {
@@ -22,7 +22,7 @@ export function Intro() {
     <div className="">
       <div className="">
       <WavyBackground className="max-w-4xl mx-auto pb-40">
-      <p className="text-2xl md:text-4xl lg:text-7xl text-red-500 font-bold inter-var text-center ">
+      <p className="text-2xl md:text-4xl lg:text-7xl text-red-600 font-bold inter-var text-center mb-60 ">
         Welcome
       </p>
     </WavyBackground>

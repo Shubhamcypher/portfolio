@@ -73,7 +73,7 @@ export const Card = ({
         "rounded-2xl h-full w-full p-2 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
-    ><img src="http://www.pixelstalk.net/wp-content/uploads/2016/06/Free-HD-Black-And-Red-Wallpapers-For-Desktop.jpg" className="w-full h-44 rounded-xl m-1" />
+    ><img src="https://i.pinimg.com/originals/4b/12/45/4b124588097f7d8ef26eeb12b9d04a64.jpg" className="w-full h-44 rounded-xl m-1 object-cover" />
       <div className="relative z-50">
         <div className="p-2">{children}</div>
       </div>
@@ -88,7 +88,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-red-500 font-bold tracking-wide text-2xl mt-4", className)}>
       {children}
     </h4>
   );
@@ -103,7 +103,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-xl",
         className
       )}
     >
