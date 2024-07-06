@@ -6,10 +6,12 @@ import { cn } from "@/utils/cn";
 import Link from "next/link";
 import ProjectData from '@/data/my_projects.json'
 import { WavyBackground } from "./ui/wavy-background";
+import LoaderIcon from "./LoaderIcon";
  
 
 function Navbar({ className }: { className?: string }) {
 
+    const [showLoader, setShowLoader] = useState(false)
     const [active, setActive] = useState<string | null>(null); 
     //The type parameter <string | null> specifies that the state can be either a string or null.
     
@@ -17,7 +19,8 @@ function Navbar({ className }: { className?: string }) {
     <div
     className={cn("fixed top-4 inset-x-0 max-w-2xl mx-auto z-50 ", className)}
     >
-        
+       <LoaderIcon showLoader={showLoader} setShowLoader={setShowLoader}/> 
+       <div onClick={()=>setShowLoader(true)}>
        <Menu setActive={setActive} >
         <Link href="/">
             <MenuItem active={null} setActive={setActive} item="Home">
@@ -77,6 +80,7 @@ function Navbar({ className }: { className?: string }) {
             </MenuItem>
         </Link>
        </Menu>
+       </div>
     </div>
   )
 }
