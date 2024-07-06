@@ -1,4 +1,4 @@
-'use server'
+'use client'
 import nodemailer from 'nodemailer';
 
 export default async (req:any, res:any) => {
