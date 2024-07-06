@@ -14,7 +14,7 @@ export default function Experience() {
   const { ref } = useSectionInView('Experience');
 
   return (
-    <div>
+    <div className='flex justify-center flex-col'>
       <section
       ref={ref}
       id="experience"

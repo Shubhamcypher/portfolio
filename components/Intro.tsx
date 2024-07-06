@@ -5,6 +5,9 @@ import { LampContainer } from "./ui/lamp";
 import { SparklesCore } from "./ui/sparkles";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { Boxes } from "./ui/background-boxes";
+import { WavyBackground } from "./ui/wavy-background";
+import { GlowingStarsBackgroundCard } from "./ui/glowing-stars";
+import { Vortex } from "./ui/votex";
 
 const me = [
   {
@@ -17,30 +20,21 @@ const me = [
 
 export function Intro() {
   return (
-    <div className="sm:w-screen">
-      <div className="lg:hidden w-screen">
-        <LampContainer>
-          <motion.h1
-            initial={{ opacity: 0.5, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.3,
-              duration: 0.8,
-              ease: "easeInOut",
-            }}
-            className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-          >
-            Hi! <br /> I am Shubham
-          </motion.h1>
-        </LampContainer>
-      </div>
+    <div className="">
+      <div className="">
+      <WavyBackground className="max-w-4xl mx-auto pb-40">
+      <p className="text-2xl md:text-4xl lg:text-7xl text-red-500 font-bold inter-var text-center ">
+        Welcome
+      </p>
+    </WavyBackground>
 
-      <div className="relative">
-        <Boxes />
-        <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+          
+        <div className="flex justify-center">
+        <Vortex particleCount={50}>
+        <div className="h-screen  bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
           <motion.h1
             initial={{ opacity: 0.5, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: -10 }}
             transition={{
               delay: 0.3,
               duration: 0.8,
@@ -65,15 +59,17 @@ export function Intro() {
               <SparklesCore
                 background="transparent"
                 minSize={0.4}
-                maxSize={1}
-                particleDensity={1200}
-                className="w-full h-full"
-                particleColor="#FFFFFF"
+                maxSize={4}
+                particleDensity={800}
+                className=""
+                particleColor="#0000FF"
               />
               {/* Radial Gradient to prevent sharp edges */}
-              <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+              <div className="absolute inset-0 bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
             </div>
           </motion.h1>
+        </div>
+        </Vortex>
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import ProjectData from '@/data/my_projects.json'
+import { WavyBackground } from "./ui/wavy-background";
  
 
 function Navbar({ className }: { className?: string }) {
@@ -16,6 +17,7 @@ function Navbar({ className }: { className?: string }) {
     <div
     className={cn("fixed top-4 inset-x-0 max-w-2xl mx-auto z-50 ", className)}
     >
+        
        <Menu setActive={setActive} >
         <Link href="/">
             <MenuItem active={null} setActive={setActive} item="Home">
