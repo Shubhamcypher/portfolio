@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { FlipWords } from "./ui/flip-words";
 
 import Technology from './Technology';
+import { LinkPreview } from '@/components/ui/link-preview';
+import { motion } from "framer-motion";
 
 const techWords = ["FullStack", "Frontend", "Backend", "Software"];
 

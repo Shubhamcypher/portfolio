@@ -7,6 +7,7 @@ import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { Boxes } from "./ui/background-boxes";
 import { WavyBackground } from "./ui/wavy-background";
 import { Vortex } from "./ui/votex";
+import { LinkPreview } from "./ui/link-preview";
 
 const me = [
   {

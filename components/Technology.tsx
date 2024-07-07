@@ -33,7 +33,7 @@ const loadingStates = [
 const Technology = () => {
     const [loading, setLoading] = useState(false);
   return (
-    <div className="w-full h-[60vh] flex items-center justify-center z-50">
+    <div className="w-full h-[30vh] flex items-center justify-center z-50">
       {/* Core Loader Modal */}
       <Loader loadingStates={loadingStates} loading={loading} duration={1500} />
  
