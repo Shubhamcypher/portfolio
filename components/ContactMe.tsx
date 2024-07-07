@@ -50,7 +50,7 @@ const ContactMe = () => {
 
   return (
     <div className="mt-8 relative flex items-center justify-center bg-transparent z-50">
-      <div className="bg-gray-900 bg-opacity-20 p-8 rounded-lg shadow-lg w-full max-w-md">
+      <div className="bg-gray-900 bg-opacity-20 p-8 rounded-lg shadow-lg w-full max-w-sm md:max-w-md lg:max-w-md sm:max-w-sm">
         <h2 className="text-2xl font-bold text-white mb-6 text-center">Contact Me</h2>
         <form className="space-y-6" >
           <div>

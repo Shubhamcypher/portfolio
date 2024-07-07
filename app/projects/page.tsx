@@ -67,7 +67,7 @@ function page() {
                     <Link href={project.github} target="_blank">
                       <Button
                         borderRadius="1.75rem"
-                        className="bg-white dark:bg-black text-black dark:text-green-500 border-neutral-200 dark:border-slate-800 flex gap-1 z-100"
+                        className="bg-white dark:bg-black text-black dark:text-green-500 border-neutral-200 dark:border-slate-800 flex gap-1 z-50"
                         onClick={(e: MouseEvent) => e.stopPropagation()}
                       >
                         <Image

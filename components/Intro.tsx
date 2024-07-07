@@ -30,14 +30,14 @@ export function Intro() {
 
           
         <div className="flex justify-center">
-        <Vortex particleCount={50}>
-        <div className="h-screen  bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
+        <Vortex particleCount={30}>
+        <div className="h-screen  bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md ">
           <motion.h1
-            initial={{ opacity: 0.5, y: 100 }}
-            whileInView={{ opacity: 1, y: -10 }}
+            initial={{ opacity: 0.5, y: 400 }}
+            whileInView={{ opacity: 1, y: -50 }}
             transition={{
-              delay: 0.3,
-              duration: 0.8,
+              delay: 0,
+              duration: 1,
               ease: "easeInOut",
             }}
             className="mt-8 bg-gradient-to-br from-slate-300 to-yellow-500 py-4 bg-clip-text text-center text-4xl font-extrabold tracking-tight text-transparent md:text-7xl"
@@ -49,20 +49,20 @@ export function Intro() {
             <div>
               <div>I am Shubham</div>
             </div>
-            <div className="w-[40rem] h-40 relative">
+            <div className="w-screen relative">
               {/* Gradients */}
-              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[4px] w-3/4 blur-sm" />
+              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-red-500 to-transparent h-px w-3/4" />
               <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-green-500 to-transparent h-px w-1/4" />
               {/* Core component */}
               <SparklesCore
                 background="transparent"
                 minSize={0.4}
-                maxSize={4}
-                particleDensity={800}
-                className=""
-                particleColor="#0000FF"
+                maxSize={8}
+                particleDensity={30}
+                className="h-screen w-screen absolute"
+                particleColor="#FF0000"
               />
               {/* Radial Gradient to prevent sharp edges */}
               <div className="absolute inset-0 bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
