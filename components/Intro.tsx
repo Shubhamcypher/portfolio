@@ -46,7 +46,7 @@ export function Intro() {
               <AnimatedTooltip items={me} />
             </div>
             <h1>Hi There!</h1>
-            <div className="flex justify-between items-center">
+            <div>
               <div>I am Shubham</div>
             </div>
             <div className="w-[40rem] h-40 relative">
