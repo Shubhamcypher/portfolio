@@ -30,7 +30,9 @@ export default function Experience() {
       id="experience"
       className="text-center sm:mb-10 flex justify-center  items-center w-full max-h-full z-0"
     >
-      <Boxes />
+      <div>
+        <Boxes />
+      </div>
       <WavyBackground waveOpacity={1} speed="slow" blur={0} />
       <VerticalTimeline lineColor="#00ff00">
         {experienceData.experience.map((item, index) => (
