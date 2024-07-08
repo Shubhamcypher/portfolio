@@ -4,9 +4,9 @@
           "id": "1",
           "title": "WeTube",
           "description": "A full-stack stack video streaming web application using MERN stack with authentication using JWT tokens.",
-          "url": "",
+          "url": "https://we-tube-mu.vercel.app",
           "github":"https://github.com/Shubhamcypher/WeTube",
-          "isHosted": false,
+          "isHosted": true,
           "image": "/images/option.png"
         },
         {
