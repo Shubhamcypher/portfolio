@@ -14,9 +14,11 @@ import { LinkPreview } from '@/components/ui/link-preview';
 export default function Experience() {
   const { ref } = useSectionInView('Experience');
 
-  const  zoomout =()=>{
-    document.body.style.zoom = "50%";
+  const  rotate =()=>{
+    document.body.style.transform = "rotate(90deg)";
   }
+
+  
 
     
 
@@ -31,7 +33,7 @@ export default function Experience() {
       Resume
       </LinkPreview>{" "}
       <div className='lg:hidden'>
-      <button onClick={zoomout}>Zoom out</button>
+      <button onClick={rotate} className='bg-green-600 p-5  absolute'>Zoom out</button>
       </div>
       </div>
       <section
