@@ -16,24 +16,22 @@ export default function Experience() {
 
   return (
     <div className='flex justify-center flex-col'>
-      <div className="w-screen  justify-end flex z-50 mt-32">
+      <div className="w-full  justify-end flex z-50 mt-32">
       <LinkPreview 
       url="https://drive.google.com/file/d/1Pfj4n6Sg_7UMtSvvD0kebekmhDoNyone/view?usp=sharing" 
       isStatic 
       imageSrc='/images/resume.png' 
-      className="font-extrabold text-6xl mr-40 h-screen">
+      className="font-extrabold text-6xl  h-full">
       Resume
       </LinkPreview>{" "}
       </div>
       <section
       ref={ref}
       id="experience"
-      className="text-center sm:mb-10 flex justify-center  items-center w-screen max-h-screen z-0"
+      className="text-center sm:mb-10 flex justify-center  items-center w-full max-h-full z-0"
     >
-      <div>
-        <Boxes />
-      </div>
-      <WavyBackground waveOpacity={1} speed="slow" blur={0} />
+      <Boxes />
+      <WavyBackground waveOpacity={1} speed="slow" blur={0} w-full/>
       <VerticalTimeline lineColor="#00ff00">
         {experienceData.experience.map((item, index) => (
           <TimelineElement key={index} item={item} />
