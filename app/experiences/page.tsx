@@ -14,6 +14,12 @@ import { LinkPreview } from '@/components/ui/link-preview';
 export default function Experience() {
   const { ref } = useSectionInView('Experience');
 
+  const  zoomout =()=>{
+    document.body.style.zoom = "50%";
+  }
+
+    
+
   return (
     <div className='flex justify-center flex-col'>
       <div className="w-full  justify-end flex z-50 mt-32">
@@ -24,6 +30,9 @@ export default function Experience() {
       className="font-extrabold text-6xl  h-full">
       Resume
       </LinkPreview>{" "}
+      <div className='lg:hidden'>
+      <button onClick={zoomout}>Zoom out</button>
+      </div>
       </div>
       <section
       ref={ref}
