@@ -7,6 +7,7 @@ import Link from "next/link";
 import ProjectData from '@/data/my_projects.json'
 import { WavyBackground } from "./ui/wavy-background";
 import LoaderIcon from "./LoaderIcon";
+import { BackgroundGradient } from "./ui/background-gradient";
  
 
 function Navbar({ className }: { className?: string }) {
@@ -17,9 +18,11 @@ function Navbar({ className }: { className?: string }) {
     
   return (
     <div
-    className={cn("fixed top-4 inset-x-0 max-w-2xl mx-auto z-50 ", className)}
+    className={cn("fixed top-4 inset-x-0 lg:max-w-2xl sm:w-full lg:mx-auto z-50 ", className)}
     >
        <LoaderIcon showLoader={showLoader} setShowLoader={setShowLoader}/> 
+       <BackgroundGradient className="rounded-full w-full bg-white dark:bg-zinc-900">
+       <div>
        <div onClick={()=>setShowLoader(true)}>
        <Menu setActive={setActive} >
         <Link href="/">
@@ -81,6 +84,8 @@ function Navbar({ className }: { className?: string }) {
         </Link>
        </Menu>
        </div>
+       </div>
+       </BackgroundGradient>
     </div>
   )
 }
