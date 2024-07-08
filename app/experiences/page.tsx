@@ -14,11 +14,7 @@ import { LinkPreview } from '@/components/ui/link-preview';
 export default function Experience() {
   const { ref } = useSectionInView('Experience');
 
-  const  rotate =()=>{
-    document.body.style.transform = "rotate(90deg)";
-  }
 
-  
 
     
 
@@ -32,9 +28,12 @@ export default function Experience() {
       className="font-extrabold text-6xl  h-full">
       Resume
       </LinkPreview>{" "}
-      <div className='lg:hidden'>
-      <button onClick={rotate} className='bg-green-600 p-5  absolute'>Zoom out</button>
-      </div>
+
+      
+      {/* <div className='lg:hidden flex justify-center items-center'>
+
+
+      </div> */}
       </div>
       <section
       ref={ref}
