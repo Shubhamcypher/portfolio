@@ -10,25 +10,46 @@ const loadingStates = [
       text: "ReactJS",
     },
     {
+      text: "NextJS",
+    },
+    {
       text: "ExpressJS",
     },
     {
       text: "NodeJS",
     },
     {
-      text: "MongoDB",
+      text: "MongoDB and MySQL",
     },
     {
-      text: "MySQL",
+      text: "TailwindCSS and styled Components",
     },
     {
       text: "Data Structures and Algo",
+    },
+    {
+      text: "C and C++",
     },
     {
       text: "Virtual Machine",
     },
     {
       text: "API Testing",
+    },
+    {
+      text: "Git and Github",
+    },
+    {
+      text: "Typescript and Javascript",
+    },
+    {
+      text: "Netlify,vercel and render",
+    },
+    {
+      text: "Figma",
+    },
+    {
+      text: "JWT authentication",
     },
   ];
 

@@ -27,34 +27,38 @@ const words = [
   const slugs = [
     "typescript",
     "javascript",
-    "dart",
-    "java",
+    "tailwindcss",
     "react",
-    "flutter",
-    "android",
+    "openai",
     "html5",
     "css3",
     "nodedotjs",
-    "express",
-    "nextdotjs",
-    "prisma",
-    "amazonaws",
-    "postgresql",
+    "leetcode",
+    "c",
+    "mongodb",
+    "mongoose",
+    "mysql",
     "firebase",
-    "nginx",
-    "vercel",
-    "testinglibrary",
-    "jest",
-    "cypress",
-    "docker",
+    "snowflake",
+    "vite",
+    "virtualbox",
+    "kalilinux",
+    "appwrite",
+    "htmx",
     "git",
-    "jira",
+    "cloudinary",
     "github",
-    "gitlab",
-    "visualstudiocode",
-    "androidstudio",
-    "sonarqube",
+    "netlify",
+    "redux",
+    "nodemon",
+    "npm",
     "figma",
+    "postman",
+    "stackblitz",
+    "styledcomponents",
+    "v8",
+    "wireshark",
+    "cplusplus",
   ];
 
 const Background = () => {
@@ -67,7 +71,9 @@ const Background = () => {
                     <FlipWords words={techWords}  />
                     Developer
                 </div>
+                <div className='hidden lg:flex md:flex'>
                 <IconCloud iconSlugs={slugs} />
+                </div>
             </div>
             <Technology/>
         </div>
