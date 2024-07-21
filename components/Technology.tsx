@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import { MultiStepLoader as Loader } from "./ui/multi-step-loader";
 import { IconSquareRoundedX } from "@tabler/icons-react";
 
+
+
 const loadingStates = [
     {
       text: "ReactJS",
@@ -29,6 +31,8 @@ const loadingStates = [
       text: "API Testing",
     },
   ];
+
+
 
 const Technology = () => {
     const [loading, setLoading] = useState(false);

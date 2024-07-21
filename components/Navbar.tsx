@@ -18,7 +18,7 @@ function Navbar({ className }: { className?: string }) {
     
   return (
     <div
-    className={cn("fixed top-4 inset-x-0 lg:max-w-2xl sm:w-full lg:mx-auto z-50 ", className)}
+    className={cn("fixed top-1 inset-x-0 lg:max-w-2xl sm:w-full lg:mx-auto z-50 ", className)}
     >
        <LoaderIcon showLoader={showLoader} setShowLoader={setShowLoader}/> 
        <BackgroundGradient className="rounded-full w-full bg-white  dark:bg-black flex  justify-center">

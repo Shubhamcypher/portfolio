@@ -7,6 +7,7 @@ import { FlipWords } from "./ui/flip-words";
 import Technology from './Technology';
 import { LinkPreview } from '@/components/ui/link-preview';
 import { motion } from "framer-motion";
+import IconCloud from "@/components/magicui/icon-cloud";
 
 const techWords = ["FullStack", "Frontend", "Backend", "Software"];
 
@@ -23,9 +24,42 @@ const words = [
     },
   ];
 
+  const slugs = [
+    "typescript",
+    "javascript",
+    "dart",
+    "java",
+    "react",
+    "flutter",
+    "android",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "nextdotjs",
+    "prisma",
+    "amazonaws",
+    "postgresql",
+    "firebase",
+    "nginx",
+    "vercel",
+    "testinglibrary",
+    "jest",
+    "cypress",
+    "docker",
+    "git",
+    "jira",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "androidstudio",
+    "sonarqube",
+    "figma",
+  ];
+
 const Background = () => {
   return (
-        <div className="flex flex-col items-center justify-center h-screen mt-8">
+        <div className="flex flex-col items-center justify-center h-screen mt-16">
             
             <TypewriterEffectSmooth words={words} />
             <div className="flex justify-center items-center px-4">
@@ -33,6 +67,7 @@ const Background = () => {
                     <FlipWords words={techWords}  />
                     Developer
                 </div>
+                <IconCloud iconSlugs={slugs} />
             </div>
             <Technology/>
         </div>
