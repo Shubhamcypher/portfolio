@@ -22,9 +22,9 @@ export default function Experience() {
     <div className='flex justify-center flex-col'>
       <div className="w-full  justify-end flex z-50 mt-32">
       <LinkPreview 
-      url="https://drive.google.com/file/d/1Pfj4n6Sg_7UMtSvvD0kebekmhDoNyone/view?usp=sharing" 
+      url="https://drive.google.com/file/d/1eDTG4XiXyV_CC3TTGm-XW8LRYUlN-GUc/view?usp=sharing" 
       isStatic 
-      imageSrc='/images/resume.png' 
+      imageSrc='/images/shubhamresume.png' 
       className="font-extrabold text-6xl  h-full">
       Resume
       </LinkPreview>{" "}
