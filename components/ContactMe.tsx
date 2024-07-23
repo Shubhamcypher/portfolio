@@ -41,7 +41,7 @@ const ContactMe = () => {
           message: '',
         });
       } else {
-        setStatus('Error sending message. Please try again.');
+        setStatus('Error sending message. Please mail me using mail icon.');
       }
     } catch (error) {
       setStatus('Something went wrong. Please try again');
