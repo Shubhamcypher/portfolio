@@ -12,7 +12,7 @@
         {
           "id": "2",
           "title": "Task Manager",
-          "description": "Full stack task management applicatio.",
+          "description": "Full stack task management application with JWT authentication and security.",
           "url": "https://task-manager-frontend-azure.vercel.app/",
           "github":"",
           "isHosted": true,
