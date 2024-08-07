@@ -11,12 +11,12 @@
         },
         {
           "id": "2",
-          "title": "NIDS",
-          "description": "Network Intrusion Detection System, which can detect potential harmful scripts and injections attack on your site.",
-          "url": "https://major-project-xi-two.vercel.app/",
+          "title": "Task Manager",
+          "description": "Full stack task management applicatio.",
+          "url": "https://task-manager-frontend-azure.vercel.app/",
           "github":"",
           "isHosted": true,
-          "image": "/images/nids.png"
+          "image": "/images/taskmanager.png"
         },
         {
           "id": "3",
